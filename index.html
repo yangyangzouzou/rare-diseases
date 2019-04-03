@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="start">Start </div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="choices" width="700" height="400" >
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"> </div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                <img src="./img/blood.png" alt="blood" width="80" height="80">
+                <img src="./img/cardiogram.png" alt="heart" width="80" height="80">
+                <img src="./img/dermaroller.png" alt="skin" width="80" height="80">
+                <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+                <div class="choice" id="E" onclick="checkAnswer('E')"></div>
+                <div class="choice" id="F" onclick="checkAnswer('F')"></div>
+                <img src="./img/muscle.png" alt="muscle" width="80" height="80">
+                <img src="./img/brain.png" alt="brain" width="80" height="80">
+                <img src="./img/mental-health.png" alt="mental" width="80" height="80">
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        
+    </div>
+    <div id="scoreContainer" style="display: none"></div>
+    <script src="quiz.js"></script>
+</body>
+</html>
