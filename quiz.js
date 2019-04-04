@@ -13,6 +13,9 @@ const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 
 
+var player = document.querySelector("#audioPlayer");
+player.play();
+
 
 // create questions
 let questions = [
@@ -86,8 +89,8 @@ let questions = [
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let count = 0;
-const questionTime = 15;
-const gaugeWidth = 15; // 150px
+const questionTime = 5;
+const gaugeWidth = 150; // 150px
 const gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
 let score = 0;
